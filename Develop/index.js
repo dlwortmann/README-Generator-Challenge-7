@@ -6,7 +6,6 @@ import generateMarkdown from "./utils/generateMarkdown.js";
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer.prompt ([
         {
             message: "What is your name?",
             name: "name",
@@ -49,22 +48,21 @@ const questions = [
             message: "What is your email address?",
             name: "email"
         }
-    ])
-    .then ((questions) => {
-        writeToFile()
-    })
-];
+    ];
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile("sample-README.md", JSON.stringify(questions), (err) => 
+    fs.writeFile(fileName, generateMarkdown(data), (err) => 
         err ? console.error(err) : console.log("Sucessful data collection."));
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  
-
+ inquirer.prompt(questions)
+ .then((data) => {
+    writeToFile("sample-README.md", data);
+ });
 }
 
 // Function call to initialize app
