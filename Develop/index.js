@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
+import generateMarkdown from "./utils/generateMarkdown.js";
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -37,7 +39,7 @@ const questions = [
             type: "list",
             message: "Select the type of license you would like to add to the project:",
             name: "license",
-            choices: ['MIT', 'Apache 2.0 License', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense']
+            choices: ['MIT', 'Apache 2.0 License', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'None']
         },
         {
             message: "What is your Github handle?",
@@ -49,18 +51,19 @@ const questions = [
         }
     ])
     .then ((questions) => {
-        writeToFile("sample-README.md", questions)
+        writeToFile()
     })
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, questions) {
-    fs.writeFile(fileName, inputs, (err) => 
+function writeToFile(fileName, data) {
+    fs.writeFile("sample-README.md", JSON.stringify(questions), (err) => 
         err ? console.error(err) : console.log("Sucessful data collection."));
 }
 
 // TODO: Create a function to initialize app
 function init() {
+  
 
 }
 
