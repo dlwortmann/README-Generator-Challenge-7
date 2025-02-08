@@ -49,13 +49,13 @@ const questions = [
         }
     ])
     .then ((questions) => {
-        writeToFile("sample-README.md, questions")
+        writeToFile("sample-README.md", questions)
     })
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, questions) {
-    fs.writeFile(fileName, questions, (err) => 
+    fs.writeFile(fileName, inputs, (err) => 
         err ? console.error(err) : console.log("Sucessful data collection."));
 }
 

@@ -40,22 +40,22 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(questions) {
   var inputs = "";
-  inputs += `${data.name}'s README\n\n`;
-  inputs += ` # ${data.title}\n\n`;
-  inputs += `${renderLicenseBadge(data.license)}\n\n`;
+  inputs += `${questions.name}'s README\n\n`;
+  inputs += ` # ${questions.title}\n\n`;
+  inputs += `${renderLicenseBadge(questions.license)}\n\n`;
   inputs += ' # Table of Contents\n\n';
   inputs += `* [Description](#description)\n * [Installation](#installation)\n * [Usage](#usage)\n * [Contributing](#contribute)\n * [Tests](#test)\n * [License](#license)\n * [Questions](#questions)\n\n`;
-  inputs += `## Description\n${data.description}\n\n`;
-  inputs += `## Installation\n${data.installation}\n\n`;
-  inputs += `## Usage Information\n${data.usage}\n\n`;
-  inputs += `## Contribution Guidelines\n${data.contribute}\n\n`;
-  inputs += `## Test Instructions\n${data.test}\n\n`;
-  inputs += `## License\nThis application is covered under the ${data.license}.\n\n`;
+  inputs += `## Description\n${questions.description}\n\n`;
+  inputs += `## Installation\n${questions.installation}\n\n`;
+  inputs += `## Usage Information\n${questions.usage}\n\n`;
+  inputs += `## Contribution Guidelines\n${questions.contribute}\n\n`;
+  inputs += `## Test Instructions\n${questions.test}\n\n`;
+  inputs += `## License\nThis application is covered under the ${questions.license}.\n\n`;
   inputs += `## Questions?\nFollow the link to my Github account to see additional respositories or click my email address to send me a message.\n\n`;
-  inputs += `[Link to Github](http://gitbuh.com/${data.github})\n\n`;
-  inputs += `<a href="mailto:${data.email}">${data.email}</a>\n\n`;
+  inputs += `[Link to Github](http://gitbuh.com/${questions.github})\n\n`;
+  inputs += `<a href="mailto:${questions.email}">${questions.email}</a>\n\n`;
 }
 
 export default generateMarkdown;
