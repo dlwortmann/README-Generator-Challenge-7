@@ -35,10 +35,14 @@ const questions = [
             name: "test",
         },
         {
+            message: "Would you like to add any credits to your README?",
+            name: "credits",
+        },
+        {
             type: "list",
             message: "Select the type of license you would like to add to the project:",
             name: "license",
-            choices: ['MIT', 'Apache 2.0 License', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'None']
+            choices: ['MIT License', 'Apache 2.0 License', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'None']
         },
         {
             message: "What is your Github handle?",

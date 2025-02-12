@@ -51,14 +51,15 @@ function generateMarkdown(questions) {
   inputs += `# ${questions.title}\n\n`;
   inputs += `${renderLicenseBadge(questions.license)}\n\n`;
   inputs += '## Table of Contents\n\n';
-  inputs += `* [Description](#description)\n * [Installation](#installation)\n * [Usage](#usage)\n * [Contributing](#contribute)\n * [Tests](#test)\n * [License](#license)\n * [Questions](#questions)\n\n`;
+  inputs += `* [Description](#description)\n * [Installation](#installation)\n * [Usage](#usage)\n * [Contributing](#contribute)\n * [Tests](#test)\n * [Credits](#credits)\n * [License](#license)\n * [Questions](#questions)\n\n`;
   inputs += `## Description\n${questions.description}\n\n`;
   inputs += `## Installation\n${questions.installation}\n\n`;
   inputs += `## Usage Information\n${questions.usage}\n\n`;
   inputs += `## Contribution Guidelines\n${questions.contribute}\n\n`;
   inputs += `## Test Instructions\n${questions.test}\n\n`;
+  inputs += `## Credits\n${questions.credits}\n\n`;
   inputs += `## License\n${renderLicenseSection(questions.license)}`;
-  inputs += `## Questions?\nFollow the link to my Github account to see additional respositories or click my email address to send me a message.\n\n`;
+  inputs += `## Questions?\nFollow the link below to see my Github account and additional respositories. Click on my email address to send me a message if you have any questions!.\n\n`;
   inputs += `[Link to Github](http://github.com/${questions.github})\n\n`;
   inputs += `<a href="mailto:${questions.email}">${questions.email}</a>\n\n`;
 
