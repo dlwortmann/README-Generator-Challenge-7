@@ -1,6 +1,6 @@
 Danny's README
 
-# wortman
+# REAME Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,27 +15,27 @@ Danny's README
  * [Questions](#questions)
 
 ## Description
-hello
+This applications allows a user to build a README file using markdown right from the terminal.
 
 ## Installation
-world
+node.js must be installed on computer
 
 ## Usage Information
-hello
+follow the prompts in the terminal to create your README file.
 
 ## Contribution Guidelines
-world
+open to suggestions
 
 ## Test Instructions
-heloo
+Can be tested in the terminal
 
-##License
+## License
 This application is covered under the undefined.
 
 ## Questions?
 Follow the link to my Github account to see additional respositories or click my email address to send me a message.
 
-[Link to Github](http://github.com/)
+[Link to Github](http://github.com/dlwortmann)
 
-<a href="mailto:"></a>
+<a href="mailto:dannywortmann@gmail.com">dannywortmann@gmail.com</a>
 
