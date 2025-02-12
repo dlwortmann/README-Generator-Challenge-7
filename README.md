@@ -2,7 +2,7 @@ Danny's README
 
 # README.md Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ Tests can be run in your own terminal.
 I'd like to give credit to my study partners Mina and Fischer who were great to bounce ideas off of and helped me work through some bugs in my functions. The Xpert Learning Assistant on BootCampSpot was able to provide the links to the license webpages that are used when you click on the badges at the top of the page.
 
 ## License
-This application is covered under the MIT License.
+This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Questions?
 Follow the link below to see my Github account and additional respositories. Click on my email address to send me a message if you have any questions!.

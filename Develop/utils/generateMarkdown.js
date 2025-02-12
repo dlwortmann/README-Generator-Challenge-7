@@ -40,7 +40,7 @@ function renderLicenseSection(license) {
   if (license === "None") {
     return "";
   } else {
-    return `This application is covered under the ${license}.\n\n`
+    return `This application is covered under the ${renderLicenseLink(license)}.\n\n`
   }
 }
 
