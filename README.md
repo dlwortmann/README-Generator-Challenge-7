@@ -21,7 +21,7 @@ https://drive.google.com/file/d/1kkRDs7r53wIxflU6o_0xnczkH7O6tRhb/view
 
 ## Installation
 1. Clone the repo onto your machine using the command "git clone".
-2. Open respository in VS code (download this if necessary) 
+2. Open respository in VS code (download this if necessary). 
 3. Make sure that node.js is also install on your machine. 
 4. Create a package.json file by running "npm init -y" command. 
 5. Install inquirer by running "npm install". 
