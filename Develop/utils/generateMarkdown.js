@@ -40,7 +40,7 @@ function renderLicenseSection(license) {
   if (license === "None") {
     return "";
   } else {
-    return `This application is covered under the ${renderLicenseLink(license)}.\n\n`
+    return `This application is covered under the ${license}.\n\n`
   }
 }
 
@@ -57,7 +57,7 @@ function generateMarkdown(questions) {
   inputs += `## Usage Information\n${questions.usage}\n\n`;
   inputs += `## Contribution Guidelines\n${questions.contribute}\n\n`;
   inputs += `## Test Instructions\n${questions.test}\n\n`;
-  inputs += `## License\n${renderLicenseSection()}`;
+  inputs += `## License\n${renderLicenseSection(questions.license)}`;
   inputs += `## Questions?\nFollow the link to my Github account to see additional respositories or click my email address to send me a message.\n\n`;
   inputs += `[Link to Github](http://github.com/${questions.github})\n\n`;
   inputs += `<a href="mailto:${questions.email}">${questions.email}</a>\n\n`;
