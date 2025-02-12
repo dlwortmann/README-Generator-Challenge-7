@@ -1,5 +1,3 @@
-Danny's README
-
 # README.md Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -17,6 +15,9 @@ Danny's README
 
 ## Description
 This is a command-line application that can be used to quickly and easily create a README file for your repository. Using node.js to generate this file can save time for developers as they are working on building a project. This application makes use of the inquirer from the node package manager asking the user to anwser a series of questions that will be used to build the  README file.
+
+## Link to Walkthrough Video
+https://drive.google.com/file/d/1kkRDs7r53wIxflU6o_0xnczkH7O6tRhb/view
 
 ## Installation
 1. Clone the repo onto your machine using the command "git clone".
