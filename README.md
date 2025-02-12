@@ -19,13 +19,17 @@ undefined
 This is a command-line application that can be used to quickly and easily create a README file for your repository. Using node.js to generate this file can save time for developers as they are working on building a project. This application makes use of the inquirer from the node package manager asking the user to anwser a series of questions that will be used to build the  README file.
 
 ## Installation
-1. Clone the repo onto your machine using the command "git clone". 2. Open respository in VS code (download this if necessary) 3. Make sure that node.js is also install on your machine. 4. Create a package.json file by running "npm init -y" command. 5. Install inquirer by running "npm install". 6. To run the application run the command "node index.js" and follow the prompted questions in the terminal. 7. At end of questions, a "sample-README.md" file will be created!
+1. Clone the repo onto your machine using the command "git clone".
+2. Open respository in VS code (download this if necessary) 
+3. Make sure that node.js is also install on your machine. 
+4. Create a package.json file by running "npm init -y" command. 
+5. Install inquirer by running "npm install". 
 
 ## Usage Information
-6. To run the application run the command "node index.js" and follow the prompted questions in the terminal. 7. At end of 
+To run the application run the command "node index.js" and follow the prompted questions in the terminal. 7. After all the prompts have been answered, a "sample README.md" file will be created for you to use how ever you'd like.
 
 ## Contribution Guidelines
-I am open to collaborations! Any changes should made on a feature branch and pull requests will need to be reviewed before being added to the main branch.
+I am open to collaborations. Any changes should made on a feature branch and pull requests will need to be reviewed before being added to the main branch.
 
 ## Test Instructions
 Tests can be run in your own terminal.
